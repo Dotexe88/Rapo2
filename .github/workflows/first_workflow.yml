@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu
     steps: 
      - name: run a single command on ubuntu machine
-      run: hostname
+       run: hostname
