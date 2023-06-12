@@ -6,3 +6,12 @@ jobs:
     steps: 
      - name: run a single command on ubuntu machine
        run: hostname
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello step 2"
+   test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello step 3"
